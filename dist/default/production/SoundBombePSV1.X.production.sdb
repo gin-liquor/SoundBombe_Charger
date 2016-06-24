@@ -1,0 +1,622 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"82 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/adc.c
+[e E2800 . `uc
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+channel_AN4 4
+]
+"181 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/i2c2.c
+[e E2801 . `uc
+I2C2_MESSAGE_COMPLETE 0
+I2C2_MESSAGE_FAIL 1
+I2C2_MESSAGE_PENDING 2
+I2C2_STUCK_START 3
+I2C2_MESSAGE_ADDRESS_NO_ACK 4
+I2C2_DATA_NO_ACK 5
+I2C2_LOST_STATE 6
+]
+"183
+[e E2869 . `uc
+S_MASTER_IDLE 0
+S_MASTER_RESTART 1
+S_MASTER_SEND_ADDR 2
+S_MASTER_SEND_DATA 3
+S_MASTER_SEND_STOP 4
+S_MASTER_ACK_ADDR 5
+S_MASTER_RCV_DATA 6
+S_MASTER_RCV_STOP 7
+S_MASTER_ACK_RCV_DATA 8
+S_MASTER_NOACK_STOP 9
+S_MASTER_SEND_ADDR_10BIT_LSB 10
+S_MASTER_10BIT_RESTART 11
+]
+"130 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[e E2819 . `uc
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+channel_AN4 4
+]
+"32 /Applications/microchip/xc8/v1.35/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.35/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.35/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 /Applications/microchip/xc8/v1.35/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.35/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v1.35/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.35/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"44 /Applications/microchip/xc8/v1.35/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 /Applications/microchip/xc8/v1.35/sources/pic/eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"66 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _main main `(v  1 e 0 0 ]
+"94
+[v _initState initState `(v  1 e 0 0 ]
+"99
+[v _detectPowerOn detectPowerOn `(v  1 e 0 0 ]
+"114
+[v _detectCharge detectCharge `(v  1 e 0 0 ]
+"138
+[v _detectVBattery detectVBattery `(v  1 e 0 0 ]
+"149
+[v _ledPower ledPower `(v  1 e 0 0 ]
+"156
+[v _ledCharge ledCharge `(v  1 e 0 0 ]
+"165
+[v _psPower psPower `(v  1 e 0 0 ]
+"172
+[v _ledMessage ledMessage `(v  1 e 0 0 ]
+"179
+[v _setLedState setLedState `(v  1 e 0 0 ]
+"185
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 0 0 ]
+"207
+[v _putPwrMsg putPwrMsg `(v  1 e 0 0 ]
+"223
+[v _I_PWR_ON_intr I_PWR_ON_intr `(v  1 e 0 0 ]
+"228
+[v _I_EXPWR_intr I_EXPWR_intr `(v  1 e 0 0 ]
+"232
+[v _I_CHRG_intr I_CHRG_intr `(v  1 e 0 0 ]
+"236
+[v _I_FAULT_intr I_FAULT_intr `(v  1 e 0 0 ]
+"65 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 0 0 ]
+"106
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+"194 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/i2c2.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 0 0 ]
+"226
+[v _I2C2_ISR I2C2_ISR `(v  1 e 0 0 ]
+"516
+[v _I2C2_FunctionComplete I2C2_FunctionComplete `(v  1 e 0 0 ]
+"530
+[v _I2C2_Stop I2C2_Stop `(v  1 e 0 0 ]
+"580
+[v _I2C2_MasterTRBInsert I2C2_MasterTRBInsert `(v  1 e 0 0 ]
+"626
+[v _I2C2_MasterReadTRBBuild I2C2_MasterReadTRBBuild `(v  1 e 0 0 ]
+"638
+[v _I2C2_MasterWriteTRBBuild I2C2_MasterWriteTRBBuild `(v  1 e 0 0 ]
+"656
+[v _I2C2_BusCollisionISR I2C2_BusCollisionISR `(v  1 e 0 0 ]
+"52 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+"70 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+"78
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+"50 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+"89
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 0 0 ]
+"64 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 0 0 ]
+"101
+[v _TMR0_ISR TMR0_ISR `(v  1 e 0 0 ]
+[s S69 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 /Applications/microchip/xc8/v1.35/include/pic16f1827.h
+[s S78 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S83 . 1 `S69 1 . 1 0 `S78 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES83  1 e 1 @11 ]
+[s S224 . 1 `uc 1 SSP2IF 1 0 :1:0 
+`uc 1 BCL2IF 1 0 :1:1 
+]
+"697
+[u S227 . 1 `S224 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES227  1 e 1 @20 ]
+"711
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S215 . 1 `uc 1 SSP2IE 1 0 :1:0 
+`uc 1 BCL2IE 1 0 :1:1 
+]
+"1403
+[u S218 . 1 `S215 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES218  1 e 1 @148 ]
+"1417
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S27 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1440
+[s S36 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S41 . 1 `S27 1 . 1 0 `S36 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES41  1 e 1 @149 ]
+"1607
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1735
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1802
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1821
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1840
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S258 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1865
+[s S266 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S270 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S273 . 1 `S258 1 . 1 0 `S266 1 . 1 0 `S270 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES273  1 e 1 @157 ]
+"1919
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1990
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2046
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2717
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2778
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3405
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3433
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4179
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @537 ]
+"4198
+[v _SSP2ADD SSP2ADD `VEuc  1 e 1 @538 ]
+"4236
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @540 ]
+"4297
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @541 ]
+[s S374 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4317
+[s S383 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S385 . 1 `S374 1 . 1 0 `S383 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES385  1 e 1 @541 ]
+[s S400 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"4383
+[u S409 . 1 `S400 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES409  1 e 1 @542 ]
+"4427
+[v _SSP2CON3 SSP2CON3 `VEuc  1 e 1 @543 ]
+"6980
+[v _IOCBF0 IOCBF0 `VEb  1 e 0 @7344 ]
+"6982
+[v _IOCBF1 IOCBF1 `VEb  1 e 0 @7345 ]
+"6986
+[v _IOCBF3 IOCBF3 `VEb  1 e 0 @7347 ]
+"6988
+[v _IOCBF4 IOCBF4 `VEb  1 e 0 @7348 ]
+"6996
+[v _IOCBN0 IOCBN0 `VEb  1 e 0 @7336 ]
+"6998
+[v _IOCBN1 IOCBN1 `VEb  1 e 0 @7337 ]
+"7002
+[v _IOCBN3 IOCBN3 `VEb  1 e 0 @7339 ]
+"7004
+[v _IOCBN4 IOCBN4 `VEb  1 e 0 @7340 ]
+"7012
+[v _IOCBP0 IOCBP0 `VEb  1 e 0 @7328 ]
+"7014
+[v _IOCBP1 IOCBP1 `VEb  1 e 0 @7329 ]
+"7018
+[v _IOCBP3 IOCBP3 `VEb  1 e 0 @7331 ]
+"7020
+[v _IOCBP4 IOCBP4 `VEb  1 e 0 @7332 ]
+"7042
+[v _LATA1 LATA1 `VEb  1 e 0 @2145 ]
+"7044
+[v _LATA2 LATA2 `VEb  1 e 0 @2146 ]
+"7046
+[v _LATA3 LATA3 `VEb  1 e 0 @2147 ]
+"7050
+[v _LATA6 LATA6 `VEb  1 e 0 @2150 ]
+"7052
+[v _LATA7 LATA7 `VEb  1 e 0 @2151 ]
+"7228
+[v _RB0 RB0 `VEb  1 e 0 @104 ]
+"7230
+[v _RB1 RB1 `VEb  1 e 0 @105 ]
+"7234
+[v _RB3 RB3 `VEb  1 e 0 @107 ]
+"7236
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
+"50 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _stPower stPower `uc  1 e 1 0 ]
+[v _stExPower stExPower `uc  1 e 1 0 ]
+"51
+[v _stOff stOff `uc  1 e 1 0 ]
+[v _stOn stOn `uc  1 e 1 0 ]
+[v _stCharge stCharge `uc  1 e 1 0 ]
+[v _stFault stFault `uc  1 e 1 0 ]
+[v _stLowBattery stLowBattery `uc  1 e 1 0 ]
+"52
+[v _stPowerSaveMode stPowerSaveMode `uc  1 e 1 0 ]
+"125
+[v _vBattery vBattery `f  1 e 3 0 ]
+[s S316 . 5 `ui 1 address 2 0 `uc 1 length 1 2 `*.1uc 1 pbuffer 2 3 ]
+"181 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/i2c2.c
+[s S328 . 4 `uc 1 count 1 0 `*.4S316 1 ptrb_list 1 1 `*.1E2801 1 pTrFlag 2 2 ]
+[v _i2c2_tr_queue i2c2_tr_queue `[1]S328  1 s 4 i2c2_tr_queue ]
+"182
+[s S332 . 1 `uc 1 full 1 0 :1:0 
+`uc 1 empty 1 0 :1:1 
+`uc 1 reserved 1 0 :6:2 
+]
+[u S336 . 1 `S332 1 s 1 0 `uc 1 status 1 0 ]
+[s S339 . 5 `*.4S328 1 pTrTail 1 0 `*.4S328 1 pTrHead 1 1 `S336 1 trStatus 1 2 `uc 1 i2cDoneFlag 1 3 `uc 1 i2cErrors 1 4 ]
+[v _i2c2_object i2c2_object `S339  1 s 5 i2c2_object ]
+"183
+[v _i2c2_state i2c2_state `E2869  1 s 1 i2c2_state ]
+"184
+[v _i2c2_trb_count i2c2_trb_count `uc  1 s 1 i2c2_trb_count ]
+"186
+[v _p_i2c2_trb_current p_i2c2_trb_current `*.1S316  1 s 1 p_i2c2_trb_current ]
+"187
+[v _p_i2c2_current p_i2c2_current `*.1S328  1 s 1 p_i2c2_current ]
+"58 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"66 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"92
+} 0
+"70 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+"76
+} 0
+"64 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 0 0 ]
+{
+"81
+} 0
+"50 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+{
+"80
+} 0
+"78 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+{
+"87
+} 0
+"194 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/i2c2.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 0 0 ]
+{
+"217
+} 0
+"65 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 0 0 ]
+{
+"80
+} 0
+"52 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+{
+"68
+} 0
+"101 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 0 0 ]
+{
+"113
+} 0
+"185 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 0 0 ]
+{
+"198
+} 0
+"179
+[v _setLedState setLedState `(v  1 e 0 0 ]
+{
+"183
+} 0
+"165
+[v _psPower psPower `(v  1 e 0 0 ]
+{
+[v psPower@on on `uc  1 a 1 wreg ]
+[v psPower@on on `uc  1 a 1 wreg ]
+[v psPower@on on `uc  1 a 1 0 ]
+"170
+} 0
+"149
+[v _ledPower ledPower `(v  1 e 0 0 ]
+{
+[v ledPower@on on `uc  1 a 1 wreg ]
+[v ledPower@on on `uc  1 a 1 wreg ]
+[v ledPower@on on `uc  1 a 1 0 ]
+"154
+} 0
+"156
+[v _ledCharge ledCharge `(v  1 e 0 0 ]
+{
+[v ledCharge@on on `uc  1 a 1 wreg ]
+[v ledCharge@on on `uc  1 a 1 wreg ]
+[v ledCharge@toggle toggle `uc  1 p 1 0 ]
+[v ledCharge@on on `uc  1 a 1 1 ]
+"163
+} 0
+"172
+[v _ledMessage ledMessage `(v  1 e 0 0 ]
+{
+[v ledMessage@on on `uc  1 a 1 wreg ]
+[v ledMessage@on on `uc  1 a 1 wreg ]
+[v ledMessage@on on `uc  1 a 1 0 ]
+"177
+} 0
+"94
+[v _initState initState `(v  1 e 0 0 ]
+{
+"97
+} 0
+"89 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 0 0 ]
+{
+"114
+} 0
+"223 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _I_PWR_ON_intr I_PWR_ON_intr `(v  1 e 0 0 ]
+{
+"226
+} 0
+"207
+[v _putPwrMsg putPwrMsg `(v  1 e 0 0 ]
+{
+"214
+[v putPwrMsg@i i `i  1 a 2 66 ]
+"212
+[v putPwrMsg@lim lim `i  1 a 2 68 ]
+"213
+[v putPwrMsg@pardeci pardeci `i  1 a 2 64 ]
+"221
+} 0
+"138
+[v _detectVBattery detectVBattery `(v  1 e 0 0 ]
+{
+"141
+[v detectVBattery@adcval adcval `i  1 a 2 37 ]
+"147
+} 0
+"4 /Applications/microchip/xc8/v1.35/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"56 /Applications/microchip/xc8/v1.35/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 27 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 31 ]
+[v ___ftdiv@exp exp `uc  1 a 1 30 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 26 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 16 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 19 ]
+"86
+} 0
+"32 /Applications/microchip/xc8/v1.35/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"106 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2800  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2800  1 a 1 wreg ]
+"108
+[v ADC_GetConversion@channel channel `E2800  1 a 1 3 ]
+"125
+} 0
+"99 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _detectPowerOn detectPowerOn `(v  1 e 0 0 ]
+{
+"107
+[v detectPowerOn@EXPOWER EXPOWER `i  1 a 2 4 ]
+"100
+[v detectPowerOn@POWER POWER `i  1 a 2 2 ]
+"112
+} 0
+"114
+[v _detectCharge detectCharge `(v  1 e 0 0 ]
+{
+"116
+[v detectCharge@FALT FALT `i  1 a 2 4 ]
+"115
+[v detectCharge@CHRG CHRG `i  1 a 2 2 ]
+"123
+} 0
+"44 /Applications/microchip/xc8/v1.35/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 57 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 61 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 56 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 48 ]
+"73
+} 0
+"15 /Applications/microchip/xc8/v1.35/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"62 /Applications/microchip/xc8/v1.35/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 43 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 47 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 46 ]
+[v ___ftmul@exp exp `uc  1 a 1 42 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 32 ]
+[v ___ftmul@f2 f2 `f  1 p 3 35 ]
+"157
+} 0
+"86 /Applications/microchip/xc8/v1.35/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 15 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 14 ]
+[v ___ftadd@sign sign `uc  1 a 1 13 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 3 ]
+[v ___ftadd@f2 f2 `f  1 p 3 6 ]
+"148
+} 0
+"62 /Applications/microchip/xc8/v1.35/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"236 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/main.c
+[v _I_FAULT_intr I_FAULT_intr `(v  1 e 0 0 ]
+{
+"238
+} 0
+"228
+[v _I_EXPWR_intr I_EXPWR_intr `(v  1 e 0 0 ]
+{
+"230
+} 0
+"232
+[v _I_CHRG_intr I_CHRG_intr `(v  1 e 0 0 ]
+{
+"234
+} 0
+"226 /Users/takuya/MPLABXProjects/SoundBombePSV1.X/mcc_generated_files/i2c2.c
+[v _I2C2_ISR I2C2_ISR `(v  1 e 0 0 ]
+{
+"228
+[v I2C2_ISR@pi2c_buf_ptr pi2c_buf_ptr `*.1uc  1 s 1 pi2c_buf_ptr ]
+"229
+[v I2C2_ISR@i2c_address i2c_address `ui  1 s 2 i2c_address ]
+"230
+[v I2C2_ISR@i2c_bytes_left i2c_bytes_left `uc  1 s 1 i2c_bytes_left ]
+"231
+[v I2C2_ISR@i2c_10bit_address_restart i2c_10bit_address_restart `uc  1 s 1 i2c_10bit_address_restart ]
+"514
+} 0
+"530
+[v _I2C2_Stop I2C2_Stop `(v  1 e 0 0 ]
+{
+[v I2C2_Stop@completion_code completion_code `E2801  1 a 1 wreg ]
+[v I2C2_Stop@completion_code completion_code `E2801  1 a 1 wreg ]
+"532
+[v I2C2_Stop@completion_code completion_code `E2801  1 a 1 1 ]
+"543
+} 0
+"516
+[v _I2C2_FunctionComplete I2C2_FunctionComplete `(v  1 e 0 0 ]
+{
+"528
+} 0
+"656
+[v _I2C2_BusCollisionISR I2C2_BusCollisionISR `(v  1 e 0 0 ]
+{
+"658
+} 0
